@@ -10,7 +10,7 @@ var jeansArray = new Array
 var skinny = new Jeans('Skinny', 'Sits below waist, skinny leg from hip to ankle', 50, 'img/skinny.png')
 var slim = new Jeans('Slim', 'A slim modern fit with comfortable leg room', 51, 'img/slim.png')
 var taper = new Jeans('Taper', 'A modern and refined fit with a tapered leg', 52, 'img/taper.png')
-var straight = new Jeans('Straight', 'The classic and cut straight all the way through', 53, 'img/straight.png')
+var straight = new Jeans('Straight', 'The classic and cut straight all the way', 53, 'img/straight.png')
 var bootcut = new Jeans('Bootcut', 'Slim through the thigh with a classic bootcut', 54, 'img/bootcut.png')
 var relaxed = new Jeans('Relaxed', 'A comfortable classic with a little more room', 51, 'img/relaxed.png')
 
@@ -36,6 +36,12 @@ for(i = 0; i < jeansArray.length; i++) {
 	stockH4.appendChild(jStock)
 	buyNow.appendChild(jButton)
 	buyNow.className = "btn btn-primary btn-lg"
+
+	//Click Button
+	buyNow.onclick = function(){
+		window.open('https://www.levi.com/US/en_US/', '_blank');
+	}
+
 	image.src = jImage
 	image.className = "img-responsive"
 
@@ -49,4 +55,6 @@ for(i = 0; i < jeansArray.length; i++) {
 	newCol.appendChild(newDiv)
 
 	document.getElementById("jeans").appendChild(newCol)
+
+	
 }

@@ -1,9 +1,16 @@
 body {
 	text-align:center;
+	background-image: url("../img/denim.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px auto;
 }
 
 .headingTitle {
 	font-size:70px;
+	color: #ADD8E6;
+	text-shadow: 0 0 3px #427df4, 0 0 15px #427df4;
 }
 
 .jjeans {
